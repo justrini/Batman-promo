@@ -3,6 +3,7 @@ body {
     color: #ffffff;
     font-family: 'Roboto', sans-serif;
     background-image: url('../img/main-bg.png');
+    background-size: 100%;
     background-repeat: no-repeat;
     background-position: top center;
 
@@ -23,6 +24,7 @@ a:active {
     margin: auto;
 
 }
+
 
 .avatar {
     margin-left: 20px;
@@ -96,15 +98,19 @@ a:active {
     border: none;
 }
 
+.search-icon {
+    cursor: pointer;
+}
+
 .user {
     display: flex;
     align-items: center;
 }
 
 /*стили для навигации */
-li {
+/*li {
     display: inline;
-}
+}*/
 
 .hero-content {
     margin: auto;
@@ -117,18 +123,24 @@ li {
 
 }
 
-.more-btn {
+.info {
+
+    width: 416px;
+}
+
+.more {
     display: flex;
     align-items: center;
 }
 
-p.more-word {
-    margin: 0%;
-}
-
-.info {
-
-    width: 416px;
+.more:after {
+    content: '';
+    width: 30px;
+    height: 30px;
+    background-image: url(../img/play.svg);
+    background-size: 100%;
+    margin-left: 15px;
+    transform: rotate(90deg);
 }
 
 .nav-info {
@@ -161,11 +173,13 @@ p.more-word {
 }
 
 .hero-content {
-    margin-top: 433px;
+    margin-top: 30%;
+    margin-bottom: 108px;
 }
 
 .title-ru {
     margin: auto;
+    margin-bottom: 8px;
     font-family: 'Playfair Display', serif;
     font-style: normal;
     font-weight: bold;
@@ -175,10 +189,67 @@ p.more-word {
 }
 
 .title-en {
-
+    margin: 0%;
+    margin-bottom: 38px;
     font-style: normal;
     font-weight: normal;
     font-size: 20px;
     line-height: 23px;
     color: #787878;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    padding: 45px 50px;
+    background-color: #fff;
+    border-radius: 3px;
+    color: #000;
+}
+
+.watch-btn {
+    padding: 10px 40px;
+    font-size: 14px;
+    line-height: 16px;
+    color: #FFf;
+    background-color: #FF8F27;
+    border-radius: 3px;
+
+}
+
+.actors-list {
+    margin: 0%;
+    padding-left: 15px;
+    list-style: none;
+    text-decoration: underline;
+}
+
+.poster {
+    display: block;
+    margin-top: -80px;
+    margin-bottom: 20px;
+}
+
+.actors-title {
+    margin-bottom: 10px;
+    padding-left: 15px;
+    font-weight: 900;
+    font-size: 16px;
+    line-height: 150%;
+}
+
+.stars-color {
+    margin-top: 25px;
+    padding-bottom: 15px;
+    width: 185px;
+    background-color: #d0d3d9;
+    border-radius: 3px;
+}
+
+.menu-item {
+    margin-right: 40px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
 }

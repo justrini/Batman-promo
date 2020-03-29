@@ -371,7 +371,7 @@ a.menu-page {
 }
 
 /* Extra Small Devices, Phones */
-@media (max-width : 378px) {
+@media (max-width : 414px) {
     .tabs {
         display: flex;
         justify-content: center;
